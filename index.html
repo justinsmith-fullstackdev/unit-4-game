@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number Checker</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="assets\css\reset.css">
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class: "col-sm-4">
+        <h1>Crystals Collector</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. </p>
+        <p>You win the game by matchging your total score to a random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden to you until you click on it.</p>
+        <p>Each time the game starts, the game will change the values of each crystal.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="random-computer-number">39</div>
+      <div class="col-sm-1" id="win-loss-notify">
+          <div class="row">
+            <div class="col-lg-12">Wins <span id="win-counter"></span></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">Losses <span id="loss-counter"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"><img src="assets/images/red.jpg" id="image1"></div>
+      <div class="col-sm-1"><img src="assets/images/blue.jpg" id="image2"></div>
+      <div class="col-sm-1"><img src="assets/images/Gold-Rupee.png" id="image3"></div>
+      <div class="col-sm-1"><img src="assets/images/green.png" id="image4"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Your total score is:</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="total-score"></div>
+    </div>
+  </div>
+
+  <script src="assets\javascript\game.js"></script>
+</body>
+
+</html>
